@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+  <HeaderCal></HeaderCal>
+  <BodyCal></BodyCal>
+  <FooterCal></FooterCal>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderCal from "./components/HeaderCal.vue";
+import BodyCal from "./components/BodyCal.vue";
+import FooterCal from "./components/FooterCal.vue";
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+  
+    BodyCal,
+    FooterCal,
+    HeaderCal
+}
 }
 </script>
 
